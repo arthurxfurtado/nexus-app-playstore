@@ -1,9 +1,9 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-// O nome do seu componente principal é NexusApp, então importamos ele
+import './index.css'; // <--- ESSA É A LINHA MÁGICA QUE TRAZ O DESIGN
 import NexusApp from './NexusApp.jsx'; 
 
-// Encontra o elemento 'root' no public/index.html
+// Encontra o elemento 'root' no public/index.html para desenhar o app
 const container = document.getElementById('root');
 const root = createRoot(container);
 
